@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Material</string>
+    <string name="media_type_bt_music">蓝牙音乐</string>
+    <string name="media_type_local_radio">本地电台</string>
+    <string name="media_type_usb_music">USB音乐</string>
+    <string name="media_type_usb_gallery">USB相册</string>
+    <string-array name="media_tab_titles">
+        <item>@string/media_type_bt_music</item>
+        <item>@string/media_type_local_radio</item>
+        <item>@string/media_type_usb_music</item>
+        <item>@string/media_type_usb_gallery</item>
+    </string-array>
+</resources>

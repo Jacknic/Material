@@ -1,0 +1,33 @@
+# 语法参考 https://docs.gradle.org/7.3.3/userguide/platforms.html#sub::toml-dependencies-format
+# 语法参考 https://toml.io/
+[versions]
+kotlin = '1.7.0'
+navigation = '2.4.2'
+android-gradle-build = '7.2.1'
+android-compileSdk = '31'
+android-minSdk = '21'
+android-targetSdk = '31'
+
+[plugins]
+android-application = { id = 'com.android.application', version.ref = 'android-gradle-build' }
+android-library = { id = 'com.android.library', version.ref = 'android-gradle-build' }
+jetbrains-kotlin-android = { id = 'org.jetbrains.kotlin.android', version.ref = 'kotlin' }
+
+[libraries]
+# basic
+androidx-appcompat = 'androidx.appcompat:appcompat:1.4.0'
+androidx-core-ktx = { module = 'androidx.core:core-ktx', version.ref = 'kotlin' }
+# ui
+material = 'com.google.android.material:material:1.5.0-alpha04'
+androidx-constraintlayout = 'androidx.constraintlayout:constraintlayout:2.1.4'
+navigation-ui-ktx = { module = 'androidx.navigation:navigation-ui-ktx', version.ref = 'navigation' }
+navigation-fragment-ktx = { module = 'androidx.navigation:navigation-fragment-ktx', version.ref = 'navigation' }
+# test
+test-junit = 'junit:junit:4.13.2'
+androidx-test-ext-junit = 'androidx.test.ext:junit-ktx:1.1.3'
+androidx-test-espresso-core = 'androidx.test.espresso:espresso-core:3.4.0'
+
+[bundles]
+androidx-test = ['androidx-test-ext-junit', 'androidx-test-espresso-core']
+
+

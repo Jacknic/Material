@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="list_space_size">10dp</dimen>
+    <integer name="grid_span_count">2</integer>
+</resources>

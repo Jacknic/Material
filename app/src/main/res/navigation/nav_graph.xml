@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.jacknic.material.components.CatalogFragment"
+        android:label="组件目录"
+        android:src="@mipmap/ic_launcher"
+        tools:layout="@layout/frag_catalog" />
+
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="com.jacknic.material.components.ButtonFragment"
+        android:label="按钮样式"
+        android:src="@mipmap/ic_launcher"
+        tools:layout="@layout/frag_button" />
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.jacknic.material.components.TabsFragment"
+        android:label="Tabs组件"
+        android:src="@mipmap/ic_launcher"
+        tools:layout="@layout/frag_tabs" />
+
+    <fragment
+        android:id="@+id/toastFragment"
+        android:name="com.jacknic.material.components.ToastFragment"
+        android:label="ToastFragment"
+        tools:layout="@layout/frag_toast" />
+
+    <fragment
+        android:id="@+id/appBarBottomFragment"
+        android:name="com.jacknic.material.components.AppBarBottomFragment"
+        android:label="AppBarBottom 底部应用栏"
+        android:src="@drawable/img_prev_appbar_bottom"
+        tools:layout="@layout/frag_app_bar_bottom" />
+
+    <fragment
+        android:id="@+id/navigationBottomFragment"
+        android:name="com.jacknic.material.components.NavigationBottomFragment"
+        android:label="底部导航栏"
+        android:src="@drawable/img_prev_navigation_bottom"
+        tools:layout="@layout/frag_navigation_bottom" />
+</navigation>

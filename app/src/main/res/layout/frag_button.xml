@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:fadeScrollbars="true"
+    android:fadingEdge="vertical"
+    android:fadingEdgeLength="50dp"
+    android:requiresFadingEdge="vertical"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="按钮高度48dp/实际高度82dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foregroundTint="@null"
+            android:text="常规状态" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNormal2"
+            android:layout_width="256dp"
+            android:layout_height="82dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foregroundTint="@null"
+            android:text="常规状态" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="选中状态" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelected2"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="选中状态" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="820dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:foregroundTint="@null"
+            android:text="常规状态" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
